@@ -1,7 +1,7 @@
 <?php
 /* Database credentials. */
-define('DB_SERVER', 'us-cdbr-east-03.cleardb.com');
-define('DB_USERNAME', 'b2ca6fbf8a3e2cb2ca6fbf8a3e2c');
+define('DB_SERVER', "us-cdbr-east-03.cleardb.com");
+define('DB_USERNAME', 'b2ca6fbf8a3e2c');
 define('DB_PASSWORD', 'a40a7933');
 define('DB_NAME', 'heroku_d1695ff1876190e');
  
