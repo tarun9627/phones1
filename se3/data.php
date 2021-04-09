@@ -3,10 +3,10 @@
 function get_phonemodel($name)
 {
         /* Database INFO */
-$servername = "localhost";
-$username = "manduvav1";
-$password = "hxe4ru";
-$dbname = "manduvav1_db";
+$servername = "us-cdbr-east-03.cleardb.com";
+$username = "b2ca6fbf8a3e2c";
+$password = "a40a7933";
+$dbname = "heroku_d1695ff1876190e";
 
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);
