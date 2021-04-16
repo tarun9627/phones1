@@ -32,7 +32,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                // Check if username exists, if yes then verify password
                if(mysqli_stmt_num_rows($stmt) == 1){                    
                    // Bind result variables
-                   mysqli_stmt_bind_result($stmt, $id, $phonename, $phonemodel);
+                   mysqli_stmt_bind_result($stmt, $id, $phonename, $h_phonemodel);
+                if(mysqli_stmt_fetch($stmt)){
+                 if($phonemodel == $h_phonemodel){
                            $message = "The phone that you have entered already exists!";
  
                        } else{
@@ -40,6 +42,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                            $message = "The phone that you have entered does not exist.";
                        }
                               }
+               }else{
+                $message  = "The phonemodel you enterd dosen't exist";
+               }
+           }
  
            // Close statement
            mysqli_stmt_close($stmt);
